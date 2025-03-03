@@ -3,6 +3,7 @@ const config = {
     width: 800,
     height: 600,
     backgroundColor: "#3498db", // Fondo azul
+    parent: "game-container", // Incrusta el juego en el div
     physics: {
         default: "arcade",
         arcade: {

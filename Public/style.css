@@ -22,3 +22,13 @@
     top: 180px;
     left: 180px;
 }
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 600px;
+    background-color: #3498db;
+    border: 5px solid #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

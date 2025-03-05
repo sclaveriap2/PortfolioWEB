@@ -3,7 +3,7 @@ name: Deploy to Firebase Hosting
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -22,9 +22,11 @@ jobs:
 
       - name: Authenticate with service account
         run: |
-          echo "${{ secrets.YOUR_SECRET_NAME }}" > serviceAccountKey.json
-          firebase use --add
-          firebase use --project portfoliodb-a446d
+          echo "${{ secrets.YOUR_SECRET_NAME }}" | base64 --decode > serviceAccountKey.json
+          export GOOGLE_APPLICATION_CREDENTIALS=./serviceAccountKey.json
+
+      - name: Select Firebase Project
+        run: firebase use --add
 
       - name: Deploy to Firebase
-        run: firebase deploy --only hosting
+        run: firebase deploy --only hosting --project portfoliodb-a446d

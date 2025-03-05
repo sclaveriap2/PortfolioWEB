@@ -1,9 +1,18 @@
-#fijo{
-    float: right;
+#fijo {
     position: sticky;
-    right: 0;
-    bottom: 0;
-    height: 55px;
+    right: 10px; /* Pegado a la derecha con un pequeño margen */
+    bottom: 10px; /* Pegado abajo con un pequeño margen */
+    height: 50px; /* Tamaño menor */
+    width: auto; /* Mantiene la proporción de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3%;
+}
+
+#fijo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción */
 }
 .game-container {
     position: relative;
@@ -52,3 +61,58 @@ body {
 #Logo-banner img {
     max-width: 150px; /* Ajusta el tamaño del logo si es necesario */
 }
+/* Hacer que el body use flexbox para distribuir los elementos */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Permitir que el contenido principal ocupe el espacio disponible */
+main {
+    flex: 1;
+    max-width: 70%; /* Ajusta según el ancho deseado */
+    margin: 20px auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Agrega algo de espacio interno */
+
+}
+
+/* Mantener el footer pegado al fondo */
+footer {
+    background-color: #238302;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+header {
+    background-color: #238302;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo abajo */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+footer {
+    background-color: #238302;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo arriba */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#Section > .Sections {
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para la línea */
+    padding-bottom: 20px; /* Espacio debajo de cada sección */
+    margin-bottom: 20px; /* Separación entre secciones */
+}
+
+.section-divider {
+    height: 5px;
+    background-color: #4B0082; /* Color índigo */
+    margin: 20px 0; /* Espaciado entre las secciones */
+    border-radius: 2px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+

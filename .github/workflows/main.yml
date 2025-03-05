@@ -1,0 +1,33 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+
+      - name: Authenticate with service account
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+        run: |
+          echo "${{ secrets.YOUR_SECRET_NAME }}" > serviceAccountKey.json
+          firebase use --add
+          firebase use --project portfoliodb-a446d
+
+      - name: Deploy to Firebase
+        run: firebase deploy --only hosting

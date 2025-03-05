@@ -46,10 +46,16 @@
 /* Fondo verde para toda la página */
 body {
     background-color: #238302;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+h1, p, a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra negra con algo de transparencia */
+    color: #4B0082;
+    font-weight: 600; /* Peso de letra medio */
 
+}
 /* Centrar el logo en el header */
 #Banner {
     display: flex;
@@ -99,6 +105,36 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+/* introducción*/
+#Introduccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Para el texto */
+.intro-text {
+    flex: 1;
+    padding-right: 20px;  /* Espacio entre el texto y la imagen */
+    text-align: justify; /* Justifica el texto */
+    line-height: 1.6; /* Ajusta el interlineado para mayor legibilidad */
+}
+
+/* Para la imagen */
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro del div */
+}
+
+.intro-image img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados si lo deseas */
+}
+
+/*Secciones*/
 
 #Section > .Sections {
     border-radius: 5px; /* Bordes redondeados */
@@ -115,4 +151,35 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
+/*Botones*/
+/* Estilo para el contenedor del botón */
+.boton {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    margin-top: 60px; /* Espacio superior entre el texto y el botón */
+}
+
+/* Estilo del botón */
+.boton button {
+    background-color: #4B0082; /* Color indigo para el fondo del botón */
+    color: white; /* Texto blanco */
+    padding: 12px 24px; /* Padding para hacerlo más grande */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Muestra el cursor de mano al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para cambios */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Efecto cuando el botón está presionado */
+.boton button:active {
+    background-color: #3A0066; /* Más oscuro cuando se presiona */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Menos sombra al presionar */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.boton button:hover {
+    background-color: #3A0066; /* Color más oscuro al pasar el mouse */
+}
 

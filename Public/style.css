@@ -215,7 +215,7 @@ footer {
 
 /* Mover la línea hacia la izquierda cuando el mouse pasa por encima */
 #base:hover::before {
-    transform: translateX(-20%); /* Mueve la línea hacia la izquierda */
+    transform: translateX(-30%); /* Mueve la línea hacia la izquierda */
 }
 
 /*Botones*/

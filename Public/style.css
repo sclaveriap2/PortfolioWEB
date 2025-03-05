@@ -65,7 +65,7 @@ h1, p, a {
 }
 
 #Logo-banner img {
-    max-width: 150px; /* Ajusta el tamaño del logo si es necesario */
+    max-width: 50px; /* Ajusta el tamaño del logo si es necesario */
 }
 /* Hacer que el body use flexbox para distribuir los elementos */
 html, body {
@@ -97,6 +97,7 @@ header {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo abajo */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    height: 10%; 
 }
 
 footer {
@@ -107,17 +108,17 @@ footer {
 }
 /* introducción*/
 #Introduccion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    background-color: #1d6b1f; /* Un tono más oscuro de verde */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 20px 0; /* Espaciado interno de arriba y abajo */
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 0 -10px 10px -10px rgba(0, 0, 0, 0.2); /* Sombra solo de lado a lado */
 }
 
 /* Para el texto */
 .intro-text {
     flex: 1;
     padding-right: 20px;  /* Espacio entre el texto y la imagen */
-    text-align: justify; /* Justifica el texto */
+    text-align: center; /* Justifica el texto */
     line-height: 1.6; /* Ajusta el interlineado para mayor legibilidad */
 }
 
@@ -129,7 +130,7 @@ footer {
 }
 
 .intro-image img {
-    max-width: 100%; /* Asegura que la imagen no se desborde */
+    max-width: 70%; /* Asegura que la imagen no se desborde */
     height: auto; /* Mantiene las proporciones de la imagen */
     border-radius: 10px; /* Bordes redondeados si lo deseas */
 }
@@ -225,11 +226,11 @@ footer {
 }
 
 .section--image3 .right {
-    background-image: url('Images/fuchsproperty.png');
+    background-image: url('Images/banner.jpg');
 }
 
 .section--image4 .right {
-    background-image: url('Images/fuchsproperty.png');
+    background-image: url('Images/Sobre_mi.jpg');
 }
 
 /*Botones*/

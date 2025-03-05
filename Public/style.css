@@ -138,7 +138,7 @@ footer {
 
 #Section > .Sections {
     border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para la línea */
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para la línea */
     padding-bottom: 20px; /* Espacio debajo de cada sección */
     margin-bottom: 20px; /* Separación entre secciones */
 }

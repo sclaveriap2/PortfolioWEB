@@ -139,7 +139,7 @@ footer {
 #Section > .Sections {
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para la línea */
-    padding-bottom: 20px; /* Espacio debajo de cada sección */
+    padding-bottom: 0px; /* Espacio debajo de cada sección */
     margin-bottom: 20px; /* Separación entre secciones */
 }
 
@@ -149,6 +149,73 @@ footer {
     margin: 20px 0; /* Espaciado entre las secciones */
     border-radius: 2px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+ /* Sección base*/
+/* Estilo general para la sección */
+/* Estilo general para la sección */
+/* Estilo general para la sección */
+#base {
+    display: flex; /* Usamos Flexbox para dividir la sección */
+    justify-content: space-between; /* Asegura que las dos partes se alineen correctamente */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 400px; /* Puedes ajustar la altura según lo que necesites */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    overflow: hidden; /* Asegura que nada sobresalga */
+    position: relative; /* Para poder usar el pseudo-elemento */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave para el agrandado y sombra */
+}
+
+/* Pseudo-elemento para la línea diagonal */
+#base::before {
+    content: ''; /* No tiene contenido visible */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%; /* Ocupa toda la altura */
+    width: 100%;
+    background: #4B0082; /* Color indigo de la línea */
+    clip-path: polygon(0 0, 60% 0, 70% 100%, 0 100%); /* Crea una línea diagonal desde la parte superior izquierda a la parte inferior derecha */
+    z-index: 1; /* Asegura que la línea esté encima del fondo */
+    transition: transform 0.3s ease; /* Animación para mover la línea */
+}
+
+/* Estilo para la parte izquierda con el título */
+#base .left {
+    flex: 0.5; /* Toma la mitad de la sección */
+    padding-left: 20px; /* Espacio alrededor del texto */
+    display: flex;
+    align-items: center; /* Centra el título verticalmente */
+    position: relative; /* Para que el título quede por encima de la línea diagonal */
+    z-index: 2; /* Hace que el texto esté por encima de la línea diagonal */
+}
+
+#base .left h1 {
+    margin: 0; /* Elimina márgenes innecesarios */
+    font-size: 2em; /* Tamaño grande para el título */
+    color: #238302; /* Color verde */
+}
+
+/* Estilo para la parte derecha con la imagen */
+#base .right {
+    flex: 1.5; /* Toma la otra mitad de la sección */
+    background-image: url('Images/fuchsproperty.png'); /* Coloca la ruta de tu imagen aquí */
+    background-position: center;
+    background-size: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    height: 100%; /* Hace que la imagen ocupe toda la altura del contenedor */
+    z-index: 0; /* Hace que la imagen esté detrás de la línea diagonal */
+}
+
+/* Efecto al pasar el mouse */
+#base:hover {
+    transform: scale(1.03); /* Agranda la sección ligeramente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Mover la línea hacia la izquierda cuando el mouse pasa por encima */
+#base:hover::before {
+    transform: translateX(-20%); /* Mueve la línea hacia la izquierda */
 }
 
 /*Botones*/

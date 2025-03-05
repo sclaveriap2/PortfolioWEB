@@ -263,4 +263,15 @@ footer {
 .boton button:hover {
     background-color: #3A0066; /* Color más oscuro al pasar el mouse */
 }
+.analisis-list {
+    display: flex;
+    max-width: 75%;
+    align-items: center;
+    align-content: center;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    text-align: justify;
+}
+/* Asegura que el main no se vea afectado */
 

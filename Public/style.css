@@ -348,3 +348,9 @@ footer {
     box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5), /* Sombra superior */
     inset 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra inferior */
 }
+.h1-coding{
+    font-size: 2vw;
+}
+.p-coding{
+    font-size: 1vw;
+}

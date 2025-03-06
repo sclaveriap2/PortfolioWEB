@@ -140,7 +140,7 @@ footer {
 .intro-text {
     flex: 1;
     padding-left: 1vw;
-    padding-right: 0vw;  /* Espacio entre el texto y la imagen */
+    padding-right: 15vw;  /* Espacio entre el texto y la imagen */
     text-align: left; /* Justifica el texto */
     line-height: 1; /* Ajusta el interlineado para mayor legibilidad */
     font-size: 3vw; /* Tamaño MUY grande */

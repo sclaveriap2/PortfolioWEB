@@ -113,16 +113,11 @@ footer {
     border-top-right-radius: 15px;
 }
 /* introducción*/
-
 #Introduccion {
-    background: radial-gradient(circle at center, #1c8c1c, #0f5d0f, #0d3d0d);
-    background-size: 200% 200%;
-
-    
-    padding: 20px 0;
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 
-                0 -10px 10px -10px rgba(0, 0, 0, 0.2);
-    transition: background-position 0.1s ease-out;
+    background-color: #1d6b1f; /* Un tono más oscuro de verde */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    padding: 20px 0; /* Espaciado interno de arriba y abajo */
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 0 -10px 10px -10px rgba(0, 0, 0, 0.2); /* Sombra solo de lado a lado */
 }
 
 /* Para el texto */

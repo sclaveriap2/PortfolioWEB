@@ -14,10 +14,3 @@ document.addEventListener('keydown', (event) => {
     player.style.left = `${x}px`;
 });
 
-document.addEventListener("mousemove", (event) => {
-    let x = event.clientX / window.innerWidth * 100;
-    let y = event.clientY / window.innerHeight * 100;
-
-    document.getElementById("Introduccion").style.background = 
-        `radial-gradient(circle at ${x}% ${y}%, #1c8c1c, #0f5d0f, #0d3d0d)`;
-});

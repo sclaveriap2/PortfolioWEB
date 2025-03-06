@@ -131,13 +131,13 @@ footer {
     padding-right: 20px;  /* Espacio entre el texto y la imagen */
     text-align: left; /* Justifica el texto */
     line-height: 1; /* Ajusta el interlineado para mayor legibilidad */
-    font-size: 4rem; /* Tamaño MUY grande */
+    font-size: 3vw; /* Tamaño MUY grande */
     font-weight: bold;
     font-family: 'JetBrains Mono', monospace; /* Fuente estilo programación */
 }
 .underscore {
     font-weight: 100;
-    color: white; /* Guion bajo en blanco */
+    color: #569CD6; /* Guion bajo en blanco */
     animation: blink 0.7s step-end infinite;
 }
 
@@ -156,34 +156,8 @@ footer {
 .tag3 { 
     color: #3ea855; /* Azul para las etiquetas */
 }
-/* Efecto de escribir y borrar */
-.typing-effect {
-    display: inline-block;
-    width: 0;
-    white-space: nowrap;
-    border-right: 0.15em solid white; /* Simula el cursor */
-    animation: typing 4s steps(30) 1s 1 normal both, blink-caret 0.75s step-end infinite; /* Animación de escribir y borrar */
-}
-
-@keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    0% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: white;
-    }
-    100% {
-        border-color: transparent;
-    }
+.tag4 { 
+    color: #353535; /* Azul para las etiquetas */
 }
 /*Secciones*/
 

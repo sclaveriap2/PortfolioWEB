@@ -37,16 +37,25 @@
     justify-content: center;
     align-items: center;
     width: 100%; /* 100% del ancho */
-    height: 100vh; /* 100% de la altura de la pantalla */
+    /*height: auto; /* 100% de la altura de la pantalla */
     background-color: #3498db;  /* Fondo azul */
     border: none; /* Sin borde temporalmente */
     box-shadow: none; /* Sin sombra temporalmente */
 }
 /* Contenedor de los botones */
-
+.boton-juego{
+    user-select: none; /* Evita selección de texto */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    outline: none; /* Evita que aparezca un borde al hacer clic */
+    -webkit-touch-callout: none; /* Evita el menú de opciones en iOS */
+    display: none;
+}
 #botton-container{
     margin-top: 0px;
     margin-bottom: 0px;
+    pointer-events: none;
 }
 #buttonLeft{
     margin-right: 3vw;
@@ -57,7 +66,9 @@
     #button-container {
         display: block; /* Mostrar los botones en móviles */
     }
-
+    .boton-juego{
+        display: block;
+    }
 }
 @media screen and (max-width: 768px) {
     #game-container {

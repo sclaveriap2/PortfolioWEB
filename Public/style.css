@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
 #fijo {
     position: sticky;
     right: 10px; /* Pegado a la derecha con un pequeño margen */
@@ -114,33 +116,75 @@ footer {
 }
 /* introducción*/
 #Introduccion {
-    background-color: #1d6b1f; /* Un tono más oscuro de verde */
+    background-color: #2D2D2D; /* Un tono más oscuro de verde */
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     padding: 20px 0; /* Espaciado interno de arriba y abajo */
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 0 -10px 10px -10px rgba(0, 0, 0, 0.2); /* Sombra solo de lado a lado */
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra inferior */
+    border-radius: 5px;
 }
 
 /* Para el texto */
 .intro-text {
     flex: 1;
+    padding-left: 20px;
     padding-right: 20px;  /* Espacio entre el texto y la imagen */
-    text-align: center; /* Justifica el texto */
-    line-height: 1.6; /* Ajusta el interlineado para mayor legibilidad */
+    text-align: left; /* Justifica el texto */
+    line-height: 1; /* Ajusta el interlineado para mayor legibilidad */
+    font-size: 4rem; /* Tamaño MUY grande */
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace; /* Fuente estilo programación */
+}
+.underscore {
+    font-weight: 100;
+    color: white; /* Guion bajo en blanco */
+    animation: blink 0.7s step-end infinite;
 }
 
-/* Para la imagen */
-.intro-image {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Centra la imagen dentro del div */
+/* Animación del guion bajo */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.tag { 
+    color: #569CD6; /* Azul para las etiquetas */
+}
+.tag2 { 
+    color: #e4904b; /* Azul para las etiquetas */
+}
+.tag3 { 
+    color: #3ea855; /* Azul para las etiquetas */
+}
+/* Efecto de escribir y borrar */
+.typing-effect {
+    display: inline-block;
+    width: 0;
+    white-space: nowrap;
+    border-right: 0.15em solid white; /* Simula el cursor */
+    animation: typing 4s steps(30) 1s 1 normal both, blink-caret 0.75s step-end infinite; /* Animación de escribir y borrar */
 }
 
-.intro-image img {
-    max-width: 70%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Mantiene las proporciones de la imagen */
-    border-radius: 10px; /* Bordes redondeados si lo deseas */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
+@keyframes blink-caret {
+    0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+    100% {
+        border-color: transparent;
+    }
+}
 /*Secciones*/
 
 #Section > .Sections {
@@ -167,6 +211,7 @@ footer {
     height: 400px; /* Puedes ajustar la altura según lo que necesites */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    
     overflow: hidden; /* Asegura que nada sobresalga */
     position: relative; /* Para poder usar el pseudo-elemento */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */

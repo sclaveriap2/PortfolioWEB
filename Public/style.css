@@ -171,6 +171,10 @@ footer {
 .tag4 { 
     color: #646464; /* Azul para las etiquetas */
 }
+.tag5{
+    color:#e2d068
+}
+
 /*Secciones*/
 
 #Section > .Sections {
@@ -365,12 +369,15 @@ footer {
     padding-right: 2vw;
 }
 .p-coding{
-    font-size: 1vw;
+    font-size: 2vw;
 }
 .padding_necesario{
-    padding: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     display: block;
     margin: 0 auto;
+    max-width: 50vw; /* No supera el tamaño de su contenedor */
+    height: auto; /* Mantiene la proporción */
 }
 pre {
     border-radius: 8px;
@@ -385,3 +392,18 @@ pre {
     inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
 
 }
+ #foto_perfil{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: block;
+    margin: 0 auto;
+    max-width: 15vw; /* No supera el tamaño de su contenedor */
+    height: auto; /* Mantiene la proporción */
+ }
+ #about{
+    display: flex;
+    height: auto; /* Mantiene la proporción */
+ }
+ .p-about{
+    font-size: 1vw;
+ }

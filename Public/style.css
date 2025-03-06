@@ -44,6 +44,13 @@
 }
 /* Contenedor de los botones */
 
+#botton-container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#buttonLeft{
+    margin-right: 3vw;
+}
 
 /* Estilo para los botones en móvil (en pantallas pequeñas) */
 @media (max-width: 768px) {

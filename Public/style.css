@@ -127,12 +127,12 @@ footer {
 }
 /* introducción*/
 #Introduccion {
-    background-color: #2D2D2D; /* Un tono más oscuro de verde */
+    background-color: #282C34; /* Un tono más oscuro de verde */
     width: 100%; /* Ocupa todo el ancho de la pantalla */
     padding: 20px 0; /* Espaciado interno de arriba y abajo */
-    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5), /* Sombra superior */
-    inset 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra inferior */
-    border-radius: 5px;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+    border-radius: 15px;
 }
 
 /* Para el texto */
@@ -193,7 +193,7 @@ footer {
     display: flex; /* Usamos Flexbox para dividir la sección */
     justify-content: space-between; /* Asegura que las dos partes se alineen correctamente */
     align-items: center; /* Centra verticalmente el contenido */
-    height: 400px; /* Puedes ajustar la altura según lo que necesites */
+    height: 10vw; /* Puedes ajustar la altura según lo que necesites */
     border-radius: 5px; /* Bordes redondeados */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
     
@@ -240,21 +240,23 @@ footer {
 
 .section .left h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2vw;
     color: #ffffff;
+    
 }
 
 .section .right {
     flex: 75%;
-    background-position: center;
+    background-position:70%;
     background-size: cover;
-    height: 100%;
+    height: 10vw;
     z-index: 0;
 }
 
 /* Clases específicas para cada imagen de fondo */
 .section--image1 .right {
     background-image: url('Images/fuchsproperty.png');
+
 }
 
 .section--image2 .right {
@@ -267,6 +269,7 @@ footer {
 
 .section--image4 .right {
     background-image: url('Images/Sobre_mi.jpg');
+    background-position: center 40%; /* Ajusta la imagen más abajo */
 }
 
 /*Botones*/
@@ -283,7 +286,7 @@ footer {
     color: white; /* Texto blanco */
     padding: 12px 24px; /* Padding para hacerlo más grande */
     border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 15px; /* Bordes redondeados */
     font-size: 16px; /* Tamaño de fuente */
     cursor: pointer; /* Muestra el cursor de mano al pasar por encima */
     transition: all 0.3s ease; /* Transición suave para cambios */
@@ -309,6 +312,12 @@ footer {
     justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
     margin: 0 auto; /* Centra el contenedor en la página */
     text-align: justify;
+    background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+    backdrop-filter: blur(3px); /* Efecto de desenfoque */
+    border-radius: 15px; /* Esquinas redondeadas */
+    /*border: 1px solid black; /* Borde negro de 1px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra detrás */
+    padding: 20px; /* Espaciado interno */
 }
 /* Asegura que el main no se vea afectado */
 
@@ -320,6 +329,7 @@ footer {
     object-fit: cover; /* Recorta la imagen para llenar el espacio */
     padding-top: 2vw;
     padding-bottom: 2vw;
+    border-radius: 15px;
    
 }
 #repo-boton{
@@ -333,24 +343,40 @@ footer {
     font-size: 2vw; /* Tamaño MUY grande */
     font-weight: bold;
     font-family: 'JetBrains Mono', monospace; /* Fuente estilo programación */
-    background-color: #2D2D2D;
+    background-color: #282C34;
     box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
     inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
 }
 #repo-boton button:hover{
-    background-color: #1b1b1b;
+    background-color: #1a1d22;
     
 }
 .coding{
-    background-color: #2D2D2D;
+    background-color: #282C34;
     padding: 1vw;
-    border-radius: 5px;
-    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5), /* Sombra superior */
-    inset 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra inferior */
+    border-radius: 15px;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
 }
 .h1-coding{
     font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 .p-coding{
     font-size: 1vw;
+}
+.padding_necesario{
+    padding: 1vw;
+}
+pre {
+    border-radius: 8px;
+    overflow: hidden;
+}
+.hljs {
+    border-radius: 15px; /* Ajusta el valor según qué tan redondeadas las quieras */
+    overflow: hidden; /* Evita que el texto sobresalga de las esquinas */
+    padding: 15px; /* Espaciado interno para que el texto no quede pegado */
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
 }

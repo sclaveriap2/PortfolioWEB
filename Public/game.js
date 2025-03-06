@@ -34,13 +34,15 @@ let isMovingRight = false;
 
 function preload() {
     // Aquí puedes cargar recursos si es necesario (imágenes, sonidos)
+    this.load.image('playerSprite', 'Images/Logo-banner.png');
 }
 
 function create() {
     // Crear un cuadrado rojo (jugador)
-    player = this.add.rectangle(400, 300, 50, 50, 0xff0000);
+    player = this.add.sprite(400, 300, 'playerSprite');
     this.physics.add.existing(player);
     player.body.setCollideWorldBounds(true);
+    player.setOrigin(0.5, 0.5); // Centrar el origen del sprite
     cursors = this.input.keyboard.createCursorKeys();
     // Asociar eventos a los botones HTML
     document.getElementById('button1').addEventListener('mousedown', function() {
@@ -82,6 +84,48 @@ function create() {
         console.log("Botón Derecha soltado");
         isMovingRight = false;
     });
+
+
+    document.getElementById('button1').addEventListener('touchstart', function() {
+        console.log("Botón Arriba presionado");
+        isMovingUp = true;
+    });
+
+    document.getElementById('button1').addEventListener('touchend', function() {
+        console.log("Botón Arriba soltado");
+        isMovingUp = false;
+    });
+
+    document.getElementById('button2').addEventListener('touchstart', function() {
+        console.log("Botón Abajo presionado");
+        isMovingDown = true;
+    });
+
+    document.getElementById('button2').addEventListener('touchend', function() {
+        console.log("Botón Abajo soltado");
+        isMovingDown = false;
+    });
+
+    document.getElementById('button3').addEventListener('touchstart', function() {
+        console.log("Botón Izquierda presionado");
+        isMovingLeft = true;
+    });
+
+    document.getElementById('button3').addEventListener('touchend', function() {
+        console.log("Botón Izquierda soltado");
+        isMovingLeft = false;
+    });
+
+    document.getElementById('button4').addEventListener('touchstart', function() {
+        console.log("Botón Derecha presionado");
+        isMovingRight = true;
+    });
+
+    document.getElementById('button4').addEventListener('touchend', function() {
+        console.log("Botón Derecha soltado");
+        isMovingRight = false;
+    });
+    
 }
 
 function update() {

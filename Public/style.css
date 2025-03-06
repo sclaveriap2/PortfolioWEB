@@ -52,8 +52,9 @@ body {
 }
 h1, p, a {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra negra con algo de transparencia */
-    color: #4B0082;
+    color: #ffffff;
     font-weight: 600; /* Peso de letra medio */
+    text-decoration: none;
 
 }
 /* Centrar el logo en el header */
@@ -74,6 +75,11 @@ html, body {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    background-image: url('Images/Fondo.png');
+    background-size: 50%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 /* Permitir que el contenido principal ocupe el espacio disponible */
@@ -107,11 +113,16 @@ footer {
     border-top-right-radius: 15px;
 }
 /* introducción*/
+
 #Introduccion {
-    background-color: #1d6b1f; /* Un tono más oscuro de verde */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    padding: 20px 0; /* Espaciado interno de arriba y abajo */
-    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 0 -10px 10px -10px rgba(0, 0, 0, 0.2); /* Sombra solo de lado a lado */
+    background: radial-gradient(circle at center, #1c8c1c, #0f5d0f, #0d3d0d);
+    background-size: 200% 200%;
+
+    
+    padding: 20px 0;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.2), 
+                0 -10px 10px -10px rgba(0, 0, 0, 0.2);
+    transition: background-position 0.1s ease-out;
 }
 
 /* Para el texto */
@@ -205,7 +216,7 @@ footer {
 .section .left h1 {
     margin: 0;
     font-size: 2em;
-    color: #238302;
+    color: #ffffff;
 }
 
 .section .right {

@@ -43,27 +43,7 @@
     box-shadow: none; /* Sin sombra temporalmente */
 }
 /* Contenedor de los botones */
-#button-container {
-    display: none; /* Los botones están ocultos por defecto */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-}
 
-/* Los botones son invisibles en pantallas grandes (computadoras) */
-#button-container button {
-    display: none; /* Ocultarlos por defecto */
-    position: absolute;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
 /* Estilo para los botones en móvil (en pantallas pequeñas) */
 @media (max-width: 768px) {
@@ -71,35 +51,6 @@
         display: block; /* Mostrar los botones en móviles */
     }
 
-    /* Ubicación de los botones */
-    #buttonUp {
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #buttonDown {
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    #buttonLeft {
-        left: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    #buttonRight {
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    /* Puedes ajustar el tamaño de los botones si es necesario */
-    #buttonUp, #buttonDown, #buttonLeft, #buttonRight {
-        font-size: 16px;
-    }
 }
 @media screen and (max-width: 768px) {
     #game-container {

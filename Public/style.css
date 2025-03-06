@@ -312,3 +312,39 @@ footer {
 }
 /* Asegura que el main no se vea afectado */
 
+/*Web development*/
+
+.images-web-dev{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio */
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+   
+}
+#repo-boton{
+    margin-top: 2vw;
+    padding-bottom: 2vw;
+    width: 100%;
+    
+}
+#repo-boton-in{
+    width: 100%;
+    font-size: 2vw; /* Tamaño MUY grande */
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace; /* Fuente estilo programación */
+    background-color: #2D2D2D;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+}
+#repo-boton button:hover{
+    background-color: #1b1b1b;
+    
+}
+.coding{
+    background-color: #2D2D2D;
+    padding: 1vw;
+    border-radius: 5px;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.5), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.5); /* Sombra inferior */
+}

@@ -17,9 +17,8 @@
     width: auto; /* Mantiene la proporción */
 }
 .game-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
+   
+    max-width: fit-content;
     background-color: blue; /* Fondo del área del juego */
     border: 2px solid white;
     overflow: hidden;
@@ -37,11 +36,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 600px;
-    background-color: #3498db;
-    border: 5px solid #222;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%; /* 100% del ancho */
+    height: 100vh; /* 100% de la altura de la pantalla */
+    background-color: #3498db;  /* Fondo azul */
+    border: none; /* Sin borde temporalmente */
+    box-shadow: none; /* Sin sombra temporalmente */
+}
+
+@media screen and (max-width: 768px) {
+    #game-container {
+        height: 60vh; /* Reduce la altura del juego en pantallas pequeñas */
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
 }
 
 /*Estilos*/
@@ -103,6 +113,7 @@ main {
     padding: 1vw; /* Espaciado interno */
     align-items: center;
 }
+
 
 
 /* Mantener el footer pegado al fondo */

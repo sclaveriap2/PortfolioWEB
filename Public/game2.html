@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sebastián Clavería</title>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
-    <script defer src="game.js"></script>
+
     <link rel="icon" type="image/png" href="Images/Logo-banner.png">
 
     <link rel="stylesheet" href="style.css">
@@ -17,7 +17,16 @@
         </div>
     </header>
     <main class="list">
-        <div id="game-container"></div>
+    <div id="game-container"></div>
+    <div id="button-container">
+        <button id="button1">Arriba</button>
+        <button id="button2">Abajo</button>
+        <button id="button3">Izquierda</button>
+        <button id="button4">Derecha</button>
+    </div>
+
+    <script src="phaser.js"></script>
+    <script src="game.js"></script>
     </main>
     <div id="fijo">
         <img src="Images/Logo-banner.png" id="logo">
@@ -27,5 +36,6 @@
             <a href="index.html" id="Logo-banner"><img src="Images/Logo-banner.png"></a>
         </div>
     </footer>
+    <script src="game.js"></script>
 </body>
 </html>

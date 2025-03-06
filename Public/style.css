@@ -100,7 +100,8 @@ main {
     border-radius: 15px; /* Esquinas redondeadas */
     /*border: 1px solid black; /* Borde negro de 1px */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra detrás */
-    padding: 20px; /* Espaciado interno */
+    padding: 1vw; /* Espaciado interno */
+    align-items: center;
 }
 
 
@@ -242,7 +243,7 @@ footer {
     margin: 0;
     font-size: 2vw;
     color: #ffffff;
-    
+
 }
 
 .section .right {
@@ -368,10 +369,13 @@ footer {
 }
 .padding_necesario{
     padding: 1vw;
+    display: block;
+    margin: 0 auto;
 }
 pre {
     border-radius: 8px;
     overflow: hidden;
+    font-size: 1vw;
 }
 .hljs {
     border-radius: 15px; /* Ajusta el valor según qué tan redondeadas las quieras */
@@ -379,4 +383,5 @@ pre {
     padding: 15px; /* Espaciado interno para que el texto no quede pegado */
     box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
     inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+
 }

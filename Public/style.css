@@ -35,8 +35,11 @@
 /* Contenedor de los botones */
 .boton-juego{
     user-select: none; /* Evita selección de texto */
-    
-    display: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE */
+    outline: none; /* Evita que aparezca un borde al hacer clic */
+    -webkit-touch-callout: none; /* Evita el menú de opciones en iOS */
 }
 #botton-container{
     margin-top: 0px;

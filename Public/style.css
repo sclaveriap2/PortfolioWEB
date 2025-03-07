@@ -58,7 +58,7 @@
 /* Estilo para los botones en móvil (en pantallas pequeñas) */
 @media (max-width: 768px) {
     #botton-container {
-        display: block; /* Mostrar los botones en móviles */
+        display: flex; /* Mostrar los botones en móviles */
     }
     .boton-juego{
         display: block;

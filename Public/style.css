@@ -26,36 +26,22 @@
 
 .player {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 1vw;
+    height: 1vw;
     background-color: red;
     top: 180px;
     left: 180px;
 }
-#game-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* 100% del ancho */
-    /*height: auto; /* 100% de la altura de la pantalla */
-    background-color: #3498db;  /* Fondo azul */
-    border: none; /* Sin borde temporalmente */
-    box-shadow: none; /* Sin sombra temporalmente */
-}
 /* Contenedor de los botones */
 .boton-juego{
     user-select: none; /* Evita selección de texto */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE */
-    outline: none; /* Evita que aparezca un borde al hacer clic */
-    -webkit-touch-callout: none; /* Evita el menú de opciones en iOS */
+    
     display: none;
 }
 #botton-container{
     margin-top: 0px;
     margin-bottom: 0px;
-    pointer-events: none;
+
 }
 #buttonLeft{
     margin-right: 3vw;
@@ -70,9 +56,15 @@
         display: block;
     }
 }
+#game-container {
+    width: 50vw;  /* Asegura que el contenedor ocupe todo el ancho disponible */
+    /*height: 100vh; /* Hace que el contenedor siempre tenga el alto de la pantalla */
+    
+}
+
 @media screen and (max-width: 768px) {
     #game-container {
-        height: 60vh; /* Reduce la altura del juego en pantallas pequeñas */
+        height: 60vh; /* Mantiene la altura reducida en pantallas pequeñas */
     }
 
     button {

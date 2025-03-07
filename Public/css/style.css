@@ -117,7 +117,7 @@ html, body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-image: url('Images/Fondo.png');
+    background-image: url('../Images/Fondo.png');
     background-size: 50%;
     background-position: center center;
     background-attachment: fixed;
@@ -311,20 +311,20 @@ footer {
 
 /* Clases específicas para cada imagen de fondo */
 .section--image1 .right {
-    background-image: url('Images/fuchsproperty.png');
+    background-image: url('../Images/fuchsproperty.png');
 
 }
 
 .section--image2 .right {
-    background-image: url('Images/Data_science_2.png');
+    background-image: url('../Images/Data_science_2.png');
 }
 
 .section--image3 .right {
-    background-image: url('Images/banner.jpg');
+    background-image: url('../Images/banner.jpg');
 }
 
 .section--image4 .right {
-    background-image: url('Images/Sobre_mi.jpg');
+    background-image: url('../Images/Sobre_mi.jpg');
     background-position: center 40%; /* Ajusta la imagen más abajo */
 }
 

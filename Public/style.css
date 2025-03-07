@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 
+* {
+    box-sizing: content-box;
+  }
+
 #fijo {
     position: sticky;
     right: 10px; /* Pegado a la derecha con un pequeño margen */
@@ -66,9 +70,12 @@
 }
 
 @media screen and (max-width: 768px) {
-    #game-container {
-        height: 60vh; /* Mantiene la altura reducida en pantallas pequeñas */
-    }
+    @media screen and (max-width: 768px) {
+        #game-container {
+          width: 100%;  /* El contenedor ocupa todo el ancho */
+          /*height: 100vh;  /* El contenedor ocupa toda la altura de la pantalla */
+        }
+      }
 
     button {
         padding: 12px 20px;
@@ -119,10 +126,20 @@ html, body {
 /* Permitir que el contenido principal ocupe el espacio disponible */
 main {
     flex: 1;
-    max-width: 70%; /* Ajusta según el ancho deseado */
-    margin: 20px auto; /* Centra el contenido horizontalmente */
-    padding: 20px; /* Agrega algo de espacio interno */
+    max-width: 100%; /* Ajusta según el ancho deseado */
+    margin: 2vw auto; /* Centra el contenido horizontalmente */
+    padding: 2vw; /* Agrega algo de espacio interno */
 
+}
+
+@media  screen and (max-width: 786px){
+    main {
+        flex: 1;
+        max-width: 100%; /* Ajusta según el ancho deseado */
+        margin: 2vw; /* Centra el contenido horizontalmente */
+        padding: 2vw; /* Agrega algo de espacio interno */
+    
+    }
 }
 
 

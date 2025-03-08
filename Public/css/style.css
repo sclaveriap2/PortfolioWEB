@@ -3,7 +3,7 @@
 * {
     box-sizing: content-box;
   }
-
+/*Logo Fijo----------------------------------------------------------------------------*/
   #fijo {
     position: fixed;
     right: 10px;
@@ -52,7 +52,10 @@
 #fijo:hover::after {
     opacity: 1;
 }
+/*----------------------------------------------------------------------------------------*/
 
+
+/*Juego 1, html, css y javascript---------------------------------------------------------------*/
 .player {
     position: absolute;
     width: 1vw;
@@ -69,7 +72,8 @@
     border: 2px solid white;
     overflow: hidden;
 }
-/* Contenedor de los botones */
+/*-------------------------------------------------------------------------------------------------------*/
+/* Juego 2 phaser-------------------------------------------------------------------------------------------- */
 .boton-juego{
     user-select: none; /* Evita selección de texto */
     -webkit-user-select: none; /* Safari */
@@ -78,6 +82,7 @@
     outline: none; /* Evita que aparezca un borde al hacer clic */
     -webkit-touch-callout: none; /* Evita el menú de opciones en iOS */
 }
+
 #botton-container{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -117,7 +122,7 @@
         font-size: 14px;
     }
 }
-
+/*-------------------------------------------------------------------------------------------------------------*/
 /*Estilos*/
 /* Fondo verde para toda la página */
 body {
@@ -188,7 +193,7 @@ main {
 
 
 
-/* Mantener el footer pegado al fondo */
+/* FOOTER, HEADER y Logo---------------------------------------------------------------- */
 #Logo-banner img {
     max-width: 5vw; /* Ajusta el tamaño del logo si es necesario */
 }
@@ -210,6 +215,7 @@ footer {
     width: 100%;
 
 }
+/*--------------------------------------------------------------------------------------------*/
 /* introducción*/
 #Introduccion {
     background-color: #282C34; /* Un tono más oscuro de verde */
@@ -258,7 +264,7 @@ footer {
 .tag5{
     color:#e2d068
 }
-
+/*-------------------------------------------------------------------------------------*/
 /*Secciones*/
 
 #Section > .Sections {
@@ -275,9 +281,8 @@ footer {
     border-radius: 2px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
-/*----------------------------------------------------------------------*/
 /*Seccion general*/
-/* Clase base para las secciones */
+
 .section {
     display: flex; /* Usamos Flexbox para dividir la sección */
     justify-content: space-between; /* Asegura que las dos partes se alineen correctamente */
@@ -360,7 +365,7 @@ footer {
     background-image: url('../Images/Sobre_mi.jpg');
     background-position: center 40%; /* Ajusta la imagen más abajo */
 }
-
+/*----------------------------------------------------------------------------------------*/
 /*Botones*/
 /* Estilo para el contenedor del botón */
 .boton {
@@ -392,6 +397,7 @@ footer {
 .boton button:hover {
     background-color: #3A0066; /* Color más oscuro al pasar el mouse */
 }
+/*---------------------------------------------------------------------------------------------*/
 .analisis-list {
     display: flex;
     max-width: 75%;
@@ -408,7 +414,6 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra detrás */
     padding: 20px; /* Espaciado interno */
 }
-/* Asegura que el main no se vea afectado */
 
 /*Web development*/
 

@@ -1,5 +1,5 @@
 const player = document.querySelector('.player');
-const container = document.querySelector('.game-container');
+const container = document.querySelector('.game-container-1');
 const step = 20; // Tamaño del movimiento
 let x = 180;
 let y = 180;

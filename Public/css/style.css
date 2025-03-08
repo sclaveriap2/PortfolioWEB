@@ -20,13 +20,7 @@
     height: 50px; /* Ajusta el tamaño del logo */
     width: auto; /* Mantiene la proporción */
 }
-.game-container {
-   
-    max-width: fit-content;
-    background-color: blue; /* Fondo del área del juego */
-    border: 2px solid white;
-    overflow: hidden;
-}
+
 
 .player {
     position: absolute;
@@ -35,6 +29,14 @@
     background-color: red;
     top: 180px;
     left: 180px;
+}
+.game-container-1{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: blue; /* Fondo del área del juego */
+    border: 2px solid white;
+    overflow: hidden;
 }
 /* Contenedor de los botones */
 .boton-juego{
@@ -69,6 +71,7 @@
     /*height: 100vh; /* Hace que el contenedor siempre tenga el alto de la pantalla */
     
 }
+
 
 @media screen and (max-width: 768px) {
     @media screen and (max-width: 768px) {
@@ -157,14 +160,9 @@ main {
 
 
 /* Mantener el footer pegado al fondo */
-footer {
-    background-color: #238302;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
+
 header {
-    background-color: #238302;
+    background-color: #282C34;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo abajo */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -172,10 +170,13 @@ header {
 }
 
 footer {
-    background-color: #238302;
+    background-color: #282C34;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo arriba */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
 }
 /* introducción*/
 #Introduccion {

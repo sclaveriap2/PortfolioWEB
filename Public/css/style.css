@@ -481,9 +481,12 @@ pre {
     inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
 
 }
+/*Sobre mi page----------------------------------------------------------------------------*/
  #foto_perfil{
     padding-top: 1vw;
     padding-bottom: 1vw;
+    padding-right: 8vw;
+    padding-left: 8vw;
     display: block;
     margin: 0 auto;
     max-width: 15vw; /* No supera el tamaño de su contenedor */
@@ -492,7 +495,25 @@ pre {
  #about{
     display: flex;
     height: auto; /* Mantiene la proporción */
+    padding-left: 2vw;
+    padding-right: 2vw;
  }
  .p-about{
-    font-size: 1vw;
+    font-size: 1.3vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
  }
+ @media  screen and (max-width: 786px) {
+    #about{
+        display: block;
+        height: auto; /* Mantiene la proporción */
+        padding-left: 2vw;
+        padding-right: 2vw;
+     }
+     .p-about{
+        font-size: 2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+     }
+ }
+/*---------------------------------------------------------------------------------------*/

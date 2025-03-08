@@ -103,20 +103,15 @@
     }
 }
 #game-container {
-    width: 50vw;  /* Asegura que el contenedor ocupe todo el ancho disponible */
-    /*height: 100vh; /* Hace que el contenedor siempre tenga el alto de la pantalla */
-    
+    width: 50vw;  /* Asegura que el contenedor ocupe todo el ancho disponible */ 
 }
 
 
-@media screen and (max-width: 768px) {
-    @media screen and (max-width: 768px) {
-        #game-container {
-          width: 100%;  /* El contenedor ocupa todo el ancho */
-          /*height: 100vh;  /* El contenedor ocupa toda la altura de la pantalla */
-        }
-      }
 
+@media screen and (max-width: 768px) {
+    #game-container {
+      width: 100%;  /* El contenedor ocupa todo el ancho */
+    }
     button {
         padding: 12px 20px;
         font-size: 14px;
@@ -138,15 +133,6 @@ h1, p, a {
     text-decoration: none;
 
 }
-/* Centrar el logo en el header */
-#Banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-
-
 /* Hacer que el body use flexbox para distribuir los elementos */
 html, body {
     height: 100%;
@@ -194,6 +180,9 @@ main {
 
 
 /* FOOTER, HEADER y Logo---------------------------------------------------------------- */
+#Logo-banner-footer img {
+    max-width: 5vw; /* Ajusta el tamaño del logo si es necesario */
+}
 #Logo-banner img {
     max-width: 5vw; /* Ajusta el tamaño del logo si es necesario */
 }
@@ -205,7 +194,13 @@ header {
     text-align: center;
     width: 100%;
 }
-
+/* Centrar el logo en el header */
+#Banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
 footer {
     background-color: #282C34;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo arriba */

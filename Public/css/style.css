@@ -4,23 +4,54 @@
     box-sizing: content-box;
   }
 
-#fijo {
-    position: sticky;
-    right: 10px; /* Pegado a la derecha con un pequeño margen */
-    bottom: 10px; /* Pegado abajo con un pequeño margen */
-    height: 50px; /* Tamaño menor */
-    width: auto; /* Mantiene la proporción de la imagen */
+  #fijo {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
-    justify-content: right;
-    padding-right: 3%;
+    justify-content: center;
+    background-color: #282C34;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Evita desbordes */
 }
 
 #fijo img {
-    height: 50px; /* Ajusta el tamaño del logo */
-    width: auto; /* Mantiene la proporción */
+    width: 30px;
+    position: absolute; /* Se mantiene centrado */
 }
 
+#fijo:hover {
+    background-color: #1e2229;
+    width: auto;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+#fijo:hover img {
+    width: 30px; /* Asegura que la imagen siempre se vea */
+    position: static; /* Permite que el texto no la desplace */
+    margin-right: 10px;
+}
+
+#fijo::after {
+    content: "Descarga mi CV";
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#fijo:hover::after {
+    opacity: 1;
+}
 
 .player {
     position: absolute;
@@ -111,7 +142,7 @@ h1, p, a {
 }
 
 #Logo-banner img {
-    max-width: 50px; /* Ajusta el tamaño del logo si es necesario */
+    max-width: 3vw; /* Ajusta el tamaño del logo si es necesario */
 }
 /* Hacer que el body use flexbox para distribuir los elementos */
 html, body {
@@ -175,7 +206,6 @@ footer {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     text-align: center;
-    padding: 10px 0;
     width: 100%;
 }
 /* introducción*/

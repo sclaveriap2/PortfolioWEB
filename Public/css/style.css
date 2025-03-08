@@ -141,9 +141,7 @@ h1, p, a {
     padding: 10px 0;
 }
 
-#Logo-banner img {
-    max-width: 3vw; /* Ajusta el tamaño del logo si es necesario */
-}
+
 /* Hacer que el body use flexbox para distribuir los elementos */
 html, body {
     height: 100%;
@@ -191,13 +189,16 @@ main {
 
 
 /* Mantener el footer pegado al fondo */
-
+#Logo-banner img {
+    max-width: 5vw; /* Ajusta el tamaño del logo si es necesario */
+}
 header {
     background-color: #282C34;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra solo abajo */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    height: 10%; 
+    text-align: center;
+    width: 100%;
 }
 
 footer {
@@ -207,6 +208,7 @@ footer {
     border-top-right-radius: 15px;
     text-align: center;
     width: 100%;
+
 }
 /* introducción*/
 #Introduccion {

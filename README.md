@@ -31,4 +31,4 @@ Este flujo de trabajo garantiza que los cambios en el código sean reflejados en
 
 ### 🔹 Diagrama del workflow
 
-![Diagrama del workflow](Images/workflow.png)
+![Diagrama del workflow](Public/Images/workflow.png)

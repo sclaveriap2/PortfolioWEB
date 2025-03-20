@@ -440,6 +440,23 @@ footer {
     background-color: #1a1d22;
     
 }
+#repo-boton-cv-in{
+    width: 100%;
+    font-size: 2vw; /* Tamaño MUY grande */
+    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace; /* Fuente estilo programación */
+    background-color: #282C34;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.2), /* Sombra superior */
+    inset 0 -10px 20px rgba(0, 0, 0, 0.2); /* Sombra inferior */
+}
+@media (max-width: 768px) { /* Ajusta el ancho según necesites */
+    #repo-boton-cv-in {
+        font-size: 1.5vw; /* Reduce el tamaño de la fuente */
+    }
+}
+
+
+
 .coding{
     background-color: #282C34;
     padding: 1vw;

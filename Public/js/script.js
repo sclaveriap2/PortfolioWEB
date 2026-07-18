@@ -11,6 +11,6 @@ document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight' && x < container.clientWidth - player.clientWidth) x += step;
 
     player.style.top = `${y}px`;
-    player.style.left = `${x}px`;
+    player.style.left = `${x}px`;//test
 });
 

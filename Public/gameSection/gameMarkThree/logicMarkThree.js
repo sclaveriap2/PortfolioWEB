@@ -37,7 +37,7 @@ let coin;
 
 // ================= PRELOAD =================
 function preload() {
-    this.load.image('playerSprite', 'Images/Logo-banner.png');
+    this.load.image('playerSprite', '../../assets/Images/Logo-banner.png');
 }
 
 // ================= CREATE =================
